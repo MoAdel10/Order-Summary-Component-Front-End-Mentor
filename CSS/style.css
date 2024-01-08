@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/pattern-background-desktop.svg");
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.details h3{
+    font-weight: 900;
+    font-size: 1.4em;
+}
+p{
+    font-weight: 500;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    width: 450px;
+    height: 650px;
+    background-color: white;
+   
+}
+
+.card-image img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-details{
+    width: 350px;
+}
+
+.card-details .details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.anl-plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding:7px;
+    border-radius: 10px;
+    
+}
+
+.left-hand-plan{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.anl-plan-iamge:hover{
+    animation: rotate;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-timing-function: ease;
+}
+
+.right-hand-plan{
+    padding: 5px;
+}
+
+.card-btns{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.btn{
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+
+
+.btn-blue{
+    background-color:   hsl(245, 75%, 52%);
+    width: 350px;
+    box-shadow: 0px 10px 19px hsl(224, 23%, 55%);
+    
+}
+
+.btn-blue:hover{
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.btn-blue a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-white a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+@keyframes change-color {
+    0%{
+        background-color: hsl(245, 75%, 52%);
+    }
+    50%{
+        background-color: hsl(224, 23%, 55%);
+    }
+    100%{
+        background-color: hsl(245, 75%, 52%);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
